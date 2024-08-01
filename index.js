@@ -43,6 +43,18 @@ function calc() {
             document.getElementById('input2').value = "";
             num1 = output;
             break;
+        case "-^2":
+            output = Math.sqrt(num1);
+            document.getElementById('input1').value = output;
+            document.getElementById('input2').value = "";
+            num1 = output;
+            break;
+        case "-^3":
+            output = Math.cbrt(num1);
+            document.getElementById('input1').value = output;
+            document.getElementById('input2').value = "";
+            num1 = output;
+            break;
     }
 }
 
@@ -78,4 +90,14 @@ function power() {
 function square() {
     op = "^2"
     calc()
+}
+
+function sqroot() {
+    op = "-^2";
+    calc();
+}
+
+function cbroot() {
+    op = "-^3";
+    calc();
 }
