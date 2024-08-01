@@ -31,6 +31,18 @@ function calc() {
             document.getElementById('input2').value = "";
             num1 = output;
             break;
+        case "^":
+            output = Math.pow(num1, num2);
+            document.getElementById('input1').value = output;
+            document.getElementById('input2').value = "";
+            num1 = output;
+            break;
+        case "^2":
+            output = Math.pow(num1, 2)
+            document.getElementById('input1').value = output;
+            document.getElementById('input2').value = "";
+            num1 = output;
+            break;
     }
 }
 
@@ -56,4 +68,14 @@ function div() {
 
 function equal() {
     calc();
+}
+
+function power() {
+    op = "^";
+    calc();
+}
+
+function square() {
+    op = "^2"
+    calc()
 }
