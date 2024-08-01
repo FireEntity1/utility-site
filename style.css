@@ -11,9 +11,10 @@ h1 {
     margin-right: auto;
 }
 
-input {
+.calcIn {
     font-family: 'Courier New', Courier, monospace;
     font-size: xx-large;
+    justify-self: center;
 }
 
 button {
@@ -21,12 +22,11 @@ button {
     margin: 2%;
     padding: 2%;
     position: static;
-    /* animation-name: contract;
-    animation-duration: 1s; */
+    border-radius: 10%;
 }
 
 .calc {
-    margin-top: 15%;
+    margin-top: 10%;
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -40,7 +40,16 @@ button {
     display:block;
   }
 
-  input:hover{
+  .calcIn:hover{
     border-width:5px;
+  }
+
+  .notes {
+   width:100%;
+   font-size:x-large;
+   min-height:200%;
+   height:500%;
+   background-color: black;
+   color:white;
   }
 

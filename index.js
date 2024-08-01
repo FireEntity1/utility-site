@@ -2,6 +2,9 @@ var num1 = null;
 var num2 = null;
 var output = null;
 var op = "";
+let notes = document.cookie
+
+window.onload(load())
 
 function calc() {
     num1 = parseFloat(document.getElementById('input1').value);
@@ -58,6 +61,8 @@ function calc() {
     }
 }
 
+
+
 function add() {
     op = "+";
     calc();
@@ -79,6 +84,7 @@ function div() {
 }
 
 function equal() {
+    document.getElementById('input2').value = num2
     calc();
 }
 
@@ -101,3 +107,4 @@ function cbroot() {
     op = "-^3";
     calc();
 }
+
